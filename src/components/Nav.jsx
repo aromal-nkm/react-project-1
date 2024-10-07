@@ -23,7 +23,7 @@ const Nav = () => {
        
         </IconButton>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Product App
+          KaRT
         </Typography>
         <Link to={'/'}><Button  variant='contained' color="secondary" sx={{ margin:3,backgroundColor:'#000000' }} >Home</Button></Link>
         <Link to={'/add'}><Button color="secondary" variant='contained' sx={{ backgroundColor:'#000000' }}>Cart</Button></Link>

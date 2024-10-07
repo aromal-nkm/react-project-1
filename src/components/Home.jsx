@@ -19,9 +19,7 @@ const [rows,setRows]=useState([]);
   axios.get('https://fakestoreapi.com/products').then((res)=>{
     setRows(res.data);
   })
-  // axios.get('https://dummyjson.com/users').then((res)=>{
-  //  setRows(res.data.users);
-  // })
+  
  }, []) 
 return (
 
@@ -56,9 +54,9 @@ return (
       </Table>
       
     </TableContainer> */}
-    <Grid container spacing={2}>
+    <Grid container spacing={4}>
       {rows.map((row) => (
-        <Grid item xs={12} sm={6} md={4} key={row.title}>
+        <Grid item xs={10} sm={6} md={4} key={row.title}>
           <Card>
             <CardMedia
               component="img"
